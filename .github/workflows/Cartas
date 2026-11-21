@@ -1,0 +1,41 @@
+# Arma solas las imágenes de las cartas nuevas y de las series nuevas (para Discord) y actualiza cartas/catalogo.json (lo lee el widget)
+name: Generar cartas nuevas
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cartas/arte/**'
+      - 'cartas/cartas-nuevas.json'
+      - 'cartas/*/serie.json'
+      - 'cartas/*/arte/**'
+      - 'cartas/bases/**'
+      - 'herramientas/generar_cartas.py'
+  workflow_dispatch: {}          # botón "Run workflow" en la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generar-cartas
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow numpy
+      - run: python herramientas/generar_cartas.py
+      - name: Guardar las imágenes en el repo
+        run: |
+          git config user.name "generador-de-cartas"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A cartas
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Cartas generadas automáticamente"
+          git pull --rebase
+          git push
