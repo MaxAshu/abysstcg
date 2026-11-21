@@ -1,0 +1,2583 @@
+{
+ "escala": 2,
+ "tam": [
+  640,
+  896
+ ],
+ "variantes": {
+  "normal/eco": {
+   "rareza": 0,
+   "acabado": null,
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(251, 234, 181)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(244, 234, 208)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.25
+    }
+   ],
+   "set": {
+    "fondo": "rgba(6, 4, 10, 0.85)",
+    "borde": "color(srgb 0.362353 0.341176 0.296471)",
+    "color": "rgb(255, 255, 255)",
+    "estrella": "rgb(154, 145, 126)",
+    "radio": 4
+   },
+   "marco": "normal/eco-marco.png",
+   "paneles": "normal/eco-paneles.png"
+  },
+  "normal/recuerdo": {
+   "rareza": 1,
+   "acabado": null,
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(251, 234, 181)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(244, 234, 208)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.15
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.385
+    }
+   ],
+   "set": {
+    "fondo": "rgba(6, 4, 10, 0.85)",
+    "borde": "color(srgb 0.496471 0.48 0.44)",
+    "color": "rgb(255, 255, 255)",
+    "estrella": "rgb(211, 204, 187)",
+    "radio": 4
+   },
+   "marco": "normal/recuerdo-marco.png",
+   "paneles": "normal/recuerdo-paneles.png"
+  },
+  "normal/reliquia": {
+   "rareza": 2,
+   "acabado": null,
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(251, 234, 181)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(244, 234, 208)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.52
+    }
+   ],
+   "set": {
+    "fondo": "rgba(6, 4, 10, 0.85)",
+    "borde": "color(srgb 0.541176 0.407059 0.108235)",
+    "color": "rgb(255, 255, 255)",
+    "estrella": "rgb(230, 173, 46)",
+    "radio": 4
+   },
+   "marco": "normal/reliquia-marco.png",
+   "paneles": "normal/reliquia-paneles.png"
+  },
+  "normal/presagio": {
+   "rareza": 3,
+   "acabado": null,
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(251, 234, 181)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(244, 234, 208)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.425
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.6325
+    }
+   ],
+   "set": {
+    "fondo": "rgba(6, 4, 10, 0.85)",
+    "borde": "color(srgb 0.6 0.472941 0.12)",
+    "color": "rgb(255, 255, 255)",
+    "estrella": "rgb(255, 201, 51)",
+    "radio": 4
+   },
+   "marco": "normal/presagio-marco.png",
+   "paneles": "normal/presagio-paneles.png"
+  },
+  "normal/eterna": {
+   "rareza": 4,
+   "acabado": null,
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(251, 234, 181)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(244, 234, 208)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "soft-light",
+     "opacidad": 0.4
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    }
+   ],
+   "set": {
+    "fondo": "rgba(6, 4, 10, 0.85)",
+    "borde": "color(srgb 0.6 0.564706 0.432941)",
+    "color": "rgb(255, 255, 255)",
+    "estrella": "rgb(255, 240, 184)",
+    "radio": 4
+   },
+   "marco": "normal/eterna-marco.png",
+   "paneles": "normal/eterna-paneles.png"
+  },
+  "alt/shiny/eco": {
+   "rareza": 0,
+   "acabado": "shiny",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 53, 0)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-shiny.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-shiny.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-shiny.png",
+     "modo": "hard-light",
+     "opacidad": 0.85
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.55
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(138, 93, 0), rgb(255, 227, 138), rgb(138, 93, 0))",
+    "borde": "rgb(255, 243, 196)",
+    "color": "rgb(26, 16, 0)",
+    "estrella": "rgb(26, 16, 0)",
+    "radio": 4
+   },
+   "marco": "alt/shiny/eco-marco.png",
+   "paneles": "alt/shiny/eco-paneles.png"
+  },
+  "alt/shiny/recuerdo": {
+   "rareza": 1,
+   "acabado": "shiny",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 53, 0)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-shiny.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-shiny.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-shiny.png",
+     "modo": "hard-light",
+     "opacidad": 0.85
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.55
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(138, 93, 0), rgb(255, 227, 138), rgb(138, 93, 0))",
+    "borde": "rgb(255, 243, 196)",
+    "color": "rgb(26, 16, 0)",
+    "estrella": "rgb(26, 16, 0)",
+    "radio": 4
+   },
+   "marco": "alt/shiny/eco-marco.png",
+   "paneles": "alt/shiny/recuerdo-paneles.png"
+  },
+  "alt/shiny/reliquia": {
+   "rareza": 2,
+   "acabado": "shiny",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 53, 0)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-shiny.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-shiny.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-shiny.png",
+     "modo": "hard-light",
+     "opacidad": 0.85
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.55
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(138, 93, 0), rgb(255, 227, 138), rgb(138, 93, 0))",
+    "borde": "rgb(255, 243, 196)",
+    "color": "rgb(26, 16, 0)",
+    "estrella": "rgb(26, 16, 0)",
+    "radio": 4
+   },
+   "marco": "alt/shiny/eco-marco.png",
+   "paneles": "alt/shiny/reliquia-paneles.png"
+  },
+  "alt/shiny/presagio": {
+   "rareza": 3,
+   "acabado": "shiny",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 53, 0)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-shiny.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-shiny.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-shiny.png",
+     "modo": "hard-light",
+     "opacidad": 0.85
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.55
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(138, 93, 0), rgb(255, 227, 138), rgb(138, 93, 0))",
+    "borde": "rgb(255, 243, 196)",
+    "color": "rgb(26, 16, 0)",
+    "estrella": "rgb(26, 16, 0)",
+    "radio": 4
+   },
+   "marco": "alt/shiny/eco-marco.png",
+   "paneles": "alt/shiny/presagio-paneles.png"
+  },
+  "alt/shiny/eterna": {
+   "rareza": 4,
+   "acabado": "shiny",
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(42, 28, 0)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 53, 0)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-shiny.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-shiny.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-shiny.png",
+     "modo": "hard-light",
+     "opacidad": 0.85
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.55
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(138, 93, 0), rgb(255, 227, 138), rgb(138, 93, 0))",
+    "borde": "rgb(255, 243, 196)",
+    "color": "rgb(26, 16, 0)",
+    "estrella": "rgb(26, 16, 0)",
+    "radio": 4
+   },
+   "marco": "alt/shiny/eterna-marco.png",
+   "paneles": "alt/shiny/eterna-paneles.png"
+  },
+  "alt/cosmic/eco": {
+   "rareza": 0,
+   "acabado": "cosmic",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(207, 198, 255)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-cosmic.png",
+     "modo": "screen",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-cosmic.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-cosmic.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.25
+    }
+   ],
+   "set": {
+    "fondo": "rgba(10, 5, 40, 0.9)",
+    "borde": "rgb(138, 123, 255)",
+    "color": "rgb(233, 228, 255)",
+    "estrella": "rgb(185, 172, 255)",
+    "radio": 4
+   },
+   "marco": "alt/cosmic/eco-marco.png",
+   "paneles": "alt/cosmic/eco-paneles.png"
+  },
+  "alt/cosmic/recuerdo": {
+   "rareza": 1,
+   "acabado": "cosmic",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(207, 198, 255)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-cosmic.png",
+     "modo": "screen",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-cosmic.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-cosmic.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.385
+    }
+   ],
+   "set": {
+    "fondo": "rgba(10, 5, 40, 0.9)",
+    "borde": "rgb(138, 123, 255)",
+    "color": "rgb(233, 228, 255)",
+    "estrella": "rgb(185, 172, 255)",
+    "radio": 4
+   },
+   "marco": "alt/cosmic/eco-marco.png",
+   "paneles": "alt/cosmic/recuerdo-paneles.png"
+  },
+  "alt/cosmic/reliquia": {
+   "rareza": 2,
+   "acabado": "cosmic",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(207, 198, 255)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-cosmic.png",
+     "modo": "screen",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-cosmic.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-cosmic.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.52
+    }
+   ],
+   "set": {
+    "fondo": "rgba(10, 5, 40, 0.9)",
+    "borde": "rgb(138, 123, 255)",
+    "color": "rgb(233, 228, 255)",
+    "estrella": "rgb(185, 172, 255)",
+    "radio": 4
+   },
+   "marco": "alt/cosmic/eco-marco.png",
+   "paneles": "alt/cosmic/reliquia-paneles.png"
+  },
+  "alt/cosmic/presagio": {
+   "rareza": 3,
+   "acabado": "cosmic",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(207, 198, 255)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-cosmic.png",
+     "modo": "screen",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-cosmic.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-cosmic.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.6325
+    }
+   ],
+   "set": {
+    "fondo": "rgba(10, 5, 40, 0.9)",
+    "borde": "rgb(138, 123, 255)",
+    "color": "rgb(233, 228, 255)",
+    "estrella": "rgb(185, 172, 255)",
+    "radio": 4
+   },
+   "marco": "alt/cosmic/eco-marco.png",
+   "paneles": "alt/cosmic/presagio-paneles.png"
+  },
+  "alt/cosmic/eterna": {
+   "rareza": 4,
+   "acabado": "cosmic",
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(207, 198, 255)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(236, 232, 255)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-cosmic.png",
+     "modo": "screen",
+     "opacidad": 1
+    },
+    {
+     "capa": "stars",
+     "archivo": "capas/estrellas-cosmic.png",
+     "modo": "normal",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-cosmic.png",
+     "modo": "screen",
+     "opacidad": 0.3
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    }
+   ],
+   "set": {
+    "fondo": "rgba(10, 5, 40, 0.9)",
+    "borde": "rgb(138, 123, 255)",
+    "color": "rgb(233, 228, 255)",
+    "estrella": "rgb(185, 172, 255)",
+    "radio": 4
+   },
+   "marco": "alt/cosmic/eterna-marco.png",
+   "paneles": "alt/cosmic/eterna-paneles.png"
+  },
+  "alt/chrome/eco": {
+   "rareza": 0,
+   "acabado": "chrome",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(43, 52, 66)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-chrome.png",
+     "modo": "overlay",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-chrome.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-chrome.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.25
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(143, 155, 171), rgb(244, 247, 251), rgb(143, 155, 171))",
+    "borde": "rgb(255, 255, 255)",
+    "color": "rgb(16, 23, 34)",
+    "estrella": "rgb(16, 23, 34)",
+    "radio": 4
+   },
+   "marco": "alt/chrome/eco-marco.png",
+   "paneles": "alt/chrome/eco-paneles.png"
+  },
+  "alt/chrome/recuerdo": {
+   "rareza": 1,
+   "acabado": "chrome",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(43, 52, 66)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-chrome.png",
+     "modo": "overlay",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-chrome.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-chrome.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.385
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(143, 155, 171), rgb(244, 247, 251), rgb(143, 155, 171))",
+    "borde": "rgb(255, 255, 255)",
+    "color": "rgb(16, 23, 34)",
+    "estrella": "rgb(16, 23, 34)",
+    "radio": 4
+   },
+   "marco": "alt/chrome/eco-marco.png",
+   "paneles": "alt/chrome/recuerdo-paneles.png"
+  },
+  "alt/chrome/reliquia": {
+   "rareza": 2,
+   "acabado": "chrome",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(43, 52, 66)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-chrome.png",
+     "modo": "overlay",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-chrome.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-chrome.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.52
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(143, 155, 171), rgb(244, 247, 251), rgb(143, 155, 171))",
+    "borde": "rgb(255, 255, 255)",
+    "color": "rgb(16, 23, 34)",
+    "estrella": "rgb(16, 23, 34)",
+    "radio": 4
+   },
+   "marco": "alt/chrome/eco-marco.png",
+   "paneles": "alt/chrome/reliquia-paneles.png"
+  },
+  "alt/chrome/presagio": {
+   "rareza": 3,
+   "acabado": "chrome",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(43, 52, 66)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-chrome.png",
+     "modo": "overlay",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-chrome.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-chrome.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.6325
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(143, 155, 171), rgb(244, 247, 251), rgb(143, 155, 171))",
+    "borde": "rgb(255, 255, 255)",
+    "color": "rgb(16, 23, 34)",
+    "estrella": "rgb(16, 23, 34)",
+    "radio": 4
+   },
+   "marco": "alt/chrome/eco-marco.png",
+   "paneles": "alt/chrome/presagio-paneles.png"
+  },
+  "alt/chrome/eterna": {
+   "rareza": 4,
+   "acabado": "chrome",
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(22, 29, 40)",
+    "sombra": "rgba(255, 255, 255, 0.6) 0px 1px 0px",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(43, 52, 66)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-chrome.png",
+     "modo": "overlay",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-chrome.png",
+     "modo": "soft-light",
+     "opacidad": 1
+    },
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-chrome.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    }
+   ],
+   "set": {
+    "fondo": "linear-gradient(90deg, rgb(143, 155, 171), rgb(244, 247, 251), rgb(143, 155, 171))",
+    "borde": "rgb(255, 255, 255)",
+    "color": "rgb(16, 23, 34)",
+    "estrella": "rgb(16, 23, 34)",
+    "radio": 4
+   },
+   "marco": "alt/chrome/eterna-marco.png",
+   "paneles": "alt/chrome/eterna-paneles.png"
+  },
+  "alt/antique/eco": {
+   "rareza": 0,
+   "acabado": "antique",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "sepia(0.9) contrast(0.95) saturate(0.85) brightness(0.97)",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 48, 20)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    }
+   ],
+   "set": {
+    "fondo": "rgba(74, 48, 20, 0.92)",
+    "borde": "rgb(168, 121, 58)",
+    "color": "rgb(251, 240, 212)",
+    "estrella": "rgb(227, 185, 112)",
+    "radio": 4
+   },
+   "marco": "alt/antique/eco-marco.png",
+   "paneles": "alt/antique/eco-paneles.png"
+  },
+  "alt/antique/recuerdo": {
+   "rareza": 1,
+   "acabado": "antique",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "sepia(0.9) contrast(0.95) saturate(0.85) brightness(0.97)",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 48, 20)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    }
+   ],
+   "set": {
+    "fondo": "rgba(74, 48, 20, 0.92)",
+    "borde": "rgb(168, 121, 58)",
+    "color": "rgb(251, 240, 212)",
+    "estrella": "rgb(227, 185, 112)",
+    "radio": 4
+   },
+   "marco": "alt/antique/eco-marco.png",
+   "paneles": "alt/antique/recuerdo-paneles.png"
+  },
+  "alt/antique/reliquia": {
+   "rareza": 2,
+   "acabado": "antique",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "sepia(0.9) contrast(0.95) saturate(0.85) brightness(0.97)",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 48, 20)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    }
+   ],
+   "set": {
+    "fondo": "rgba(74, 48, 20, 0.92)",
+    "borde": "rgb(168, 121, 58)",
+    "color": "rgb(251, 240, 212)",
+    "estrella": "rgb(227, 185, 112)",
+    "radio": 4
+   },
+   "marco": "alt/antique/eco-marco.png",
+   "paneles": "alt/antique/reliquia-paneles.png"
+  },
+  "alt/antique/presagio": {
+   "rareza": 3,
+   "acabado": "antique",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "sepia(0.9) contrast(0.95) saturate(0.85) brightness(0.97)",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 48, 20)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    }
+   ],
+   "set": {
+    "fondo": "rgba(74, 48, 20, 0.92)",
+    "borde": "rgb(168, 121, 58)",
+    "color": "rgb(251, 240, 212)",
+    "estrella": "rgb(227, 185, 112)",
+    "radio": 4
+   },
+   "marco": "alt/antique/eco-marco.png",
+   "paneles": "alt/antique/presagio-paneles.png"
+  },
+  "alt/antique/eterna": {
+   "rareza": 4,
+   "acabado": "antique",
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "sepia(0.9) contrast(0.95) saturate(0.85) brightness(0.97)",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(58, 36, 16)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(74, 48, 20)",
+    "sombra": "none"
+   },
+   "capas": [
+    {
+     "capa": "fxBefore",
+     "archivo": "capas/fx-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    },
+    {
+     "capa": "fxAfter",
+     "archivo": "capas/fx2-antique.png",
+     "modo": "multiply",
+     "opacidad": 1
+    }
+   ],
+   "set": {
+    "fondo": "rgba(74, 48, 20, 0.92)",
+    "borde": "rgb(168, 121, 58)",
+    "color": "rgb(251, 240, 212)",
+    "estrella": "rgb(227, 185, 112)",
+    "radio": 4
+   },
+   "marco": "alt/antique/eterna-marco.png",
+   "paneles": "alt/antique/eterna-paneles.png"
+  },
+  "alt/neon/eco": {
+   "rareza": 0,
+   "acabado": "neon",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(217, 255, 249)",
+    "sombra": "rgb(57, 255, 224) 0px 0px 8px, rgb(57, 255, 224) 0px 0px 16px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(255, 209, 250)",
+    "sombra": "rgb(255, 61, 240) 0px 0px 6px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.18
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.25
+    }
+   ],
+   "set": {
+    "fondo": "rgb(2, 1, 10)",
+    "borde": "rgb(57, 255, 224)",
+    "color": "rgb(217, 255, 249)",
+    "estrella": "rgb(255, 61, 240)",
+    "radio": 4
+   },
+   "marco": "alt/neon/eco-marco.png",
+   "paneles": "alt/neon/eco-paneles.png"
+  },
+  "alt/neon/recuerdo": {
+   "rareza": 1,
+   "acabado": "neon",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(217, 255, 249)",
+    "sombra": "rgb(57, 255, 224) 0px 0px 8px, rgb(57, 255, 224) 0px 0px 16px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(255, 209, 250)",
+    "sombra": "rgb(255, 61, 240) 0px 0px 6px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.18
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.385
+    }
+   ],
+   "set": {
+    "fondo": "rgb(2, 1, 10)",
+    "borde": "rgb(57, 255, 224)",
+    "color": "rgb(217, 255, 249)",
+    "estrella": "rgb(255, 61, 240)",
+    "radio": 4
+   },
+   "marco": "alt/neon/eco-marco.png",
+   "paneles": "alt/neon/recuerdo-paneles.png"
+  },
+  "alt/neon/reliquia": {
+   "rareza": 2,
+   "acabado": "neon",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(217, 255, 249)",
+    "sombra": "rgb(57, 255, 224) 0px 0px 8px, rgb(57, 255, 224) 0px 0px 16px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(255, 209, 250)",
+    "sombra": "rgb(255, 61, 240) 0px 0px 6px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.18
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.52
+    }
+   ],
+   "set": {
+    "fondo": "rgb(2, 1, 10)",
+    "borde": "rgb(57, 255, 224)",
+    "color": "rgb(217, 255, 249)",
+    "estrella": "rgb(255, 61, 240)",
+    "radio": 4
+   },
+   "marco": "alt/neon/eco-marco.png",
+   "paneles": "alt/neon/reliquia-paneles.png"
+  },
+  "alt/neon/presagio": {
+   "rareza": 3,
+   "acabado": "neon",
+   "full": false,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": [
+    21,
+    59,
+    278,
+    239
+   ],
+   "artwinRadio": 4,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(217, 255, 249)",
+    "sombra": "rgb(57, 255, 224) 0px 0px 8px, rgb(57, 255, 224) 0px 0px 16px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(255, 209, 250)",
+    "sombra": "rgb(255, 61, 240) 0px 0px 6px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.18
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.6325
+    }
+   ],
+   "set": {
+    "fondo": "rgb(2, 1, 10)",
+    "borde": "rgb(57, 255, 224)",
+    "color": "rgb(217, 255, 249)",
+    "estrella": "rgb(255, 61, 240)",
+    "radio": 4
+   },
+   "marco": "alt/neon/eco-marco.png",
+   "paneles": "alt/neon/presagio-paneles.png"
+  },
+  "alt/neon/eterna": {
+   "rareza": 4,
+   "acabado": "neon",
+   "full": true,
+   "inner": [
+    9,
+    9,
+    302,
+    430
+   ],
+   "innerRadio": 13,
+   "artwin": null,
+   "artwinRadio": 0,
+   "filtroArte": "none",
+   "titulo": {
+    "x0": 33,
+    "x1": 257,
+    "cy": 34,
+    "size": 17,
+    "peso": "700",
+    "color": "rgb(217, 255, 249)",
+    "sombra": "rgb(57, 255, 224) 0px 0px 8px, rgb(57, 255, 224) 0px 0px 16px",
+    "espaciado": "0.17px"
+   },
+   "tipo": {
+    "x0": 35,
+    "x1": 291,
+    "cy": 314.5,
+    "size": 12.5,
+    "peso": "400",
+    "color": "rgb(255, 209, 250)",
+    "sombra": "rgb(255, 61, 240) 0px 0px 6px",
+    "espaciado": "1px"
+   },
+   "texto": {
+    "x0": 33,
+    "x1": 291,
+    "y0": 334,
+    "size": 15.5,
+    "alto": 17.98,
+    "color": "rgb(239, 228, 196)",
+    "sombra": "none",
+    "lineas": 4
+   },
+   "pie": {
+    "x0": 19,
+    "x1": 301,
+    "cy": 423,
+    "size": 8,
+    "color": "rgb(217, 204, 170)",
+    "sombra": "rgb(0, 0, 0) 0px 1px 2px"
+   },
+   "capas": [
+    {
+     "capa": "holo",
+     "archivo": "capas/holo-normal.png",
+     "modo": "screen",
+     "opacidad": 0.18
+    },
+    {
+     "capa": "glare",
+     "archivo": "capas/glare-normal.png",
+     "modo": "overlay",
+     "opacidad": 0.35
+    }
+   ],
+   "set": {
+    "fondo": "rgb(2, 1, 10)",
+    "borde": "rgb(57, 255, 224)",
+    "color": "rgb(217, 255, 249)",
+    "estrella": "rgb(255, 61, 240)",
+    "radio": 4
+   },
+   "marco": "alt/neon/eterna-marco.png",
+   "paneles": "alt/neon/eterna-paneles.png"
+  }
+ }
+}
