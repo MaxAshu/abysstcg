@@ -1,0 +1,19 @@
+{
+  "code": "ABC",
+  "name": "NOMBRE DE LA SERIE",
+  "packTitle": "SOBRE DE<br>LA SERIE",
+  "packSub": "SUBTÍTULO DEL SOBRE",
+  "redeem": "Nombre exacto del canje en la tienda",
+  "estudio": "MYTH Studio",
+  "brilloNormal": false,
+  "cartas": [
+    {
+      "name": "Nombre de la Carta",
+      "r": 0,
+      "type": "Alma - Pasajero",
+      "flavor": "Texto de la carta.",
+      "artist": "Ilustrador",
+      "file": "archivo-del-arte.png"
+    }
+  ]
+}

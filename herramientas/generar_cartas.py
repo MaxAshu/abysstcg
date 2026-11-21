@@ -1,17 +1,22 @@
 """Arma las imágenes de las cartas NUEVAS (para Discord) usando las bases.
 
-  cartas/cartas-nuevas.json      -> datos de las cartas nuevas (nombre, rareza, tipo, texto, artista, archivo de arte)
-  cartas/arte/<archivo>          -> la ilustración de cada carta nueva
+  cartas/cartas-nuevas.json      -> cartas nuevas de El Vacío (nombre, rareza, tipo, texto, artista, archivo de arte)
+  cartas/arte/<archivo>          -> la ilustración de cada carta nueva de El Vacío
+  cartas/<serie>/serie.json      -> una serie nueva completa (datos del sobre + sus cartas)
+  cartas/<serie>/arte/<archivo>  -> las ilustraciones de esa serie
   cartas/bases/                  -> marcos, paneles, capas de brillo y fuentes (los hace hacer_bases.py)
 
 Salida (los mismos nombres que ya buscan el widget y el Worker):
   cartas/<nombre-de-la-carta>.png               carta normal
   cartas/alt/<nombre-de-la-carta>-<acabado>.png versiones ALT (shiny, cosmic, chrome, antique, neon)
+  cartas/<serie>/<nombre>-carta.png  y  cartas/<serie>/alt/<nombre>-carta-<acabado>.png
+  cartas/catalogo.json                          lo que lee el widget (solo cartas con sus imágenes ya hechas)
+Cada carta se arma una sola vez; se vuelve a armar solo si cambias sus datos o su arte.
 
 Nunca pisa una imagen que no haya hecho este script (las cartas viejas quedan intactas).
 Uso:  pip install pillow numpy  &&  python herramientas/generar_cartas.py
 """
-import json, re, sys, unicodedata
+import json, os, re, sys, unicodedata
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -316,46 +321,127 @@ def armar(c, arte, fin, num, total, codigo, estudio, brillo=False):
     return lienzo
 
 
-def main():
-    if not DATOS.exists():
-        print('No hay cartas/cartas-nuevas.json: nada que hacer.'); return
-    d = json.loads(DATOS.read_text(encoding='utf-8'))
-    lista = d.get('cartas', [])
-    codigo = d.get('serie', 'VAC')
-    inicio = int(d.get('numeroInicial', 1))
+def aviso(msg):
+    """Advertencia visible en la pestaña Actions de GitHub (no detiene el resto)."""
+    print(f'::warning::{msg}' if os.environ.get('GITHUB_ACTIONS') else f'  ! {msg}')
+    if os.environ.get('GITHUB_STEP_SUMMARY'):
+        with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+            f.write(f'- ⚠️ {msg}\n')
+
+
+def huella(*partes):
+    import hashlib
+    h = hashlib.sha1()
+    for x in partes:
+        h.update(x if isinstance(x, bytes) else json.dumps(x, ensure_ascii=False, sort_keys=True).encode())
+    return h.hexdigest()[:16]
+
+
+CAMPOS = ('name', 'r', 'type', 'flavor', 'artist', 'file', 'pos', 'fit', 'pixel', 'dfile')
+HUELLA_BASES = huella((BASES / 'config.json').read_bytes())
+
+
+def procesar(lista, carpeta, arte_dir, sufijo, codigo, inicio, estudio, brillo, registro, etiqueta):
+    """Arma las cartas de una serie. Devuelve (cartas listas para el widget, errores)."""
     total = inicio - 1 + len(lista)
-    estudio = d.get('estudio', 'MYTH Studio')
-    hechas = set(json.loads(REGISTRO.read_text(encoding='utf-8'))) if REGISTRO.exists() else set()
-    errores = 0
+    listas, errores, usados = [], 0, set()
     for i, c in enumerate(lista):
+        c = dict(c)
         nombre = c.get('name')
         try:
             c['r'] = max(0, min(4, int(c.get('r', 0))))
         except (TypeError, ValueError):
             c['r'] = 0
         if not nombre or not c.get('file'):
-            print(f'  ! carta {i + 1}: falta "name" o "file"'); errores += 1; continue
-        ruta_arte = ARTE / c['file']
+            aviso(f'[{etiqueta}] carta {i + 1}: falta "name" o "file"'); errores += 1; continue
+        ruta_arte = arte_dir / c['file']
         if not ruta_arte.exists():
-            print(f'  ! {nombre}: no encuentro el arte cartas/arte/{c["file"]} (súbelo y se generará)'); continue
-        arte = Image.open(ruta_arte).convert('RGBA')
+            aviso(f'[{etiqueta}] {nombre}: falta el arte {ruta_arte.relative_to(RAIZ).as_posix()} (súbelo y se generará)'); continue
+        s = c.get('dfile', '').rsplit('.', 1)[0] or (slug(nombre) + sufijo)
+        if s in usados:
+            aviso(f'[{etiqueta}] {nombre}: hay dos cartas con el mismo nombre'); errores += 1; continue
+        usados.add(s)
         num = str(inicio + i).zfill(2)
-        s = c.get('dfile', '').rsplit('.', 1)[0] or slug(nombre)
-        salidas = [(None, CARTAS / f'{s}.png')] + [(f, CARTAS / 'alt' / f'{s}-{f}.png') for f in ACABADOS]
-        hechos = 0
+        firma = huella({k: c.get(k) for k in CAMPOS}, ruta_arte.read_bytes(), HUELLA_BASES, codigo, num, estudio, brillo)
+        principal = carpeta / f'{s}.png'
+        if principal.exists() and principal.relative_to(CARTAS).as_posix() not in registro:
+            aviso(f'[{etiqueta}] {nombre}: ya existe {principal.relative_to(CARTAS).as_posix()} (una carta vieja). Cámbiale el nombre o usa "dfile".')
+            errores += 1; continue
+        salidas = [(None, principal)] + [(f, carpeta / 'alt' / f'{s}-{f}.png') for f in ACABADOS]
+        arte, hechos = None, 0
         for fin, out in salidas:
             rel = out.relative_to(CARTAS).as_posix()
-            if out.exists() and rel not in hechas:
-                print(f'  ! {rel} ya existe y no lo hizo este script: no lo toco'); continue
+            if out.exists() and rel not in registro:
+                aviso(f'[{etiqueta}] {rel} ya existe y no lo hizo este script: no lo toco'); continue
+            if out.exists() and registro.get(rel) == firma:
+                continue                                         # ya está hecha y no cambió nada
+            if arte is None:
+                arte = Image.open(ruta_arte).convert('RGBA')
             out.parent.mkdir(parents=True, exist_ok=True)
-            armar(c, arte, fin, num, str(total).zfill(2), codigo, estudio, bool(d.get('brilloNormal'))).save(out, optimize=True)
-            hechas.add(rel); hechos += 1
+            armar(c, arte, fin, num, str(total).zfill(2), codigo, estudio, brillo).save(out, optimize=True)
+            registro[rel] = firma; hechos += 1
         if hechos:
-            print(f'  ✓ {nombre} ({RAREZAS[c["r"]]}) -> {hechos} imágenes ({s}.png y sus ALT)')
-        else:
-            print(f'  ! {nombre}: ya hay una carta con ese nombre en el repo; cámbiale el nombre o usa "dfile"')
-    REGISTRO.write_text(json.dumps(sorted(hechas), ensure_ascii=False, indent=1), encoding='utf-8')
-    sys.exit(1 if errores else 0)
+            print(f'  ✓ [{etiqueta}] {nombre} ({RAREZAS[c["r"]]}) -> {hechos} imágenes')
+        rel_carpeta = carpeta.relative_to(CARTAS).as_posix()
+        pre = '' if rel_carpeta == '.' else rel_carpeta + '/'
+        lista_widget = {k: v for k, v in c.items() if k not in ('file', 'dfile')}
+        listas.append({**lista_widget, 'num': int(num), 'img': f'{pre}arte/{c["file"]}', 'dimg': f'{pre}{s}.png'})
+    return listas, errores
+
+
+def leer(ruta):
+    try:
+        return json.loads(ruta.read_text(encoding='utf-8'))
+    except Exception as e:
+        aviso(f'{ruta.relative_to(RAIZ).as_posix()} no es JSON válido: {e}')
+        return None
+
+
+def main():
+    reg = json.loads(REGISTRO.read_text(encoding='utf-8')) if REGISTRO.exists() else {}
+    registro = {k: '' for k in reg} if isinstance(reg, list) else reg
+    errores = 0
+    catalogo = {'actualizado': None, 'vac': [], 'series': []}
+
+    # 1) Cartas nuevas de El Vacío
+    d = leer(DATOS) if DATOS.exists() else None
+    if d:
+        listas, e = procesar(d.get('cartas', []), CARTAS, ARTE, '', d.get('serie', 'VAC'), int(d.get('numeroInicial', 1)),
+                             d.get('estudio', 'MYTH Studio'), bool(d.get('brilloNormal')), registro, d.get('serie', 'VAC'))
+        catalogo['vac'], errores = listas, errores + e
+
+    # 2) Series nuevas: cada carpeta cartas/<carpeta>/ con un serie.json (las que empiezan por _ se ignoran)
+    codigos = {str((d or {}).get('serie', 'VAC')).upper()}
+    for sj in sorted(CARTAS.glob('*/serie.json')):
+        carpeta = sj.parent
+        if carpeta.name.startswith(('_', '.')) or carpeta.name in ('arte', 'alt', 'bases'):
+            continue
+        if carpeta.name != slug(carpeta.name):
+            aviso(f'carpeta "{carpeta.name}": usa solo minúsculas, números y guiones (ej. "{slug(carpeta.name)}")'); errores += 1; continue
+        s = leer(sj)
+        if not s:
+            errores += 1; continue
+        codigo = str(s.get('code') or carpeta.name[:6]).upper()
+        if codigo in codigos:
+            aviso(f'serie "{carpeta.name}": el código {codigo} ya lo usa otra serie'); errores += 1; continue
+        codigos.add(codigo)
+        listas, e = procesar(s.get('cartas', []), carpeta, carpeta / 'arte', '-carta', codigo, int(s.get('numeroInicial', 1)),
+                             s.get('estudio', 'MYTH Studio'), bool(s.get('brilloNormal')), registro, codigo)
+        errores += e
+        catalogo['series'].append({'folder': carpeta.name, 'code': codigo, 'name': s.get('name') or carpeta.name.upper(),
+                                   'packTitle': s.get('packTitle') or 'SOBRE', 'packSub': s.get('packSub') or '',
+                                   'redeem': s.get('redeem') or None, 'total': int(s.get('numeroInicial', 1)) - 1 + len(s.get('cartas', [])), 'cards': listas})
+        print(f'  · serie {codigo} ({carpeta.name}): {len(listas)} cartas listas')
+
+    # 3) Catálogo que lee el widget: solo cartas que ya tienen sus imágenes hechas
+    ruta = CARTAS / 'catalogo.json'
+    viejo = leer(ruta) if ruta.exists() else None
+    if not viejo or {k: v for k, v in viejo.items() if k != 'actualizado'} != {k: v for k, v in catalogo.items() if k != 'actualizado'}:
+        import datetime
+        catalogo['actualizado'] = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds')
+        ruta.write_text(json.dumps(catalogo, ensure_ascii=False, indent=1), encoding='utf-8')
+    REGISTRO.write_text(json.dumps(registro, ensure_ascii=False, indent=1, sort_keys=True), encoding='utf-8')
+    print('Listo.')
 
 
 if __name__ == '__main__':
